@@ -42,5 +42,5 @@ async def on_message(message):
         await message.channel.send("https://www.youtube.com/watch?v=QDo5VD5znYM")
 
 
-access_token = os.environ
-client.run("access_token")
+access_token = os.environ["BOT_TOKKEN"]
+client.run(access_token)
