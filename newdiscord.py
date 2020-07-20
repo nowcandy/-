@@ -2,7 +2,7 @@ from random import randrange
 from turtledemo.minimal_hanoi import play
 
 import discord
-
+import os
 client = discord.Client()
 
 @client.event
@@ -42,5 +42,5 @@ async def on_message(message):
         await message.channel.send("https://www.youtube.com/watch?v=QDo5VD5znYM")
 
 
-
-client.run("NzMzOTI2MDQzNTcxODQ3MjI4.XxUolQ.3EBMCQS19wiNl-krnan5l3bFpOA")
+access_token = os.environ
+client.run("access_token")
