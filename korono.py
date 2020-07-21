@@ -15,7 +15,7 @@ import requests
 import time
 
 client = discord.Client() # Create Instance of Client. This Client is discord server's connection to Discord Room
-bottoken = "BOT_TOKEN"
+
 
 
 @client.event # Use these decorator to register an event.
@@ -78,4 +78,7 @@ async def on_message(message): # on_message() event : when the bot has recieved 
         embed.set_footer(text='Service provided by Hoplin.',
                          icon_url='https://avatars2.githubusercontent.com/u/45956041?s=460&u=1caf3b112111cbd9849a2b95a88c3a8f3a15ecfa&v=4')
         await message.channel.send("Covid-19 Virus Korea Status", embed=embed)
-client.run(bottoken)
+        
+    access_token = os.environ["BOT_TOKKEN"]
+    client.run(access_token)    
+
