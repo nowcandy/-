@@ -1,2 +1,2 @@
-worker: python newdiscord.py
 worker: python korono.py
+worker: python newdiscord.py
