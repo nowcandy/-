@@ -15,7 +15,7 @@ import requests
 import time
 
 client = discord.Client() # Create Instance of Client. This Client is discord server's connection to Discord Room
-bottoken = "TKO"
+bottoken = "NzMzOTI2MDQzNTcxODQ3MjI4.XxZH7g.HIX7CtDlKJKLouAkVZ7Zbgjky6w"
 
 
 @client.event # Use these decorator to register an event.
@@ -31,7 +31,7 @@ async def on_message(message): # on_message() event : when the bot has recieved 
     if message.author == client.user:
         return
 
-    if message.content.startswith("인직아 "):
+    if message.content.startswith("인직아 코로나"):
         # 보건복지부 코로나 바이러스 정보사이트"
         covidSite = "http://ncov.mohw.go.kr/index.jsp"
         covidNotice = "http://ncov.mohw.go.kr"
