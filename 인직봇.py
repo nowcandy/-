@@ -1,19 +1,6 @@
 from random import randrange
 from turtledemo.minimal_hanoi import play
-import asyncio
 import os
-from discord.ext import commands
-import urllib
-from urllib.request import URLError
-from urllib.request import HTTPError
-from urllib.request import urlopen
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-from urllib.parse import quote
-import re # Regex for youtube link
-import warnings
-import requests
-import time
 import discord
 
 client = discord.Client()
@@ -121,5 +108,5 @@ async def on_message(message, ):
 async def on_member_join(member):
     channel = client.get_channel('736114981741002823')
     await member.send('도움말을 통해 다양한 서비스를 제공받을 수 있으니 해보라고 !')
-
-client.run("NzMzOTI2MDQzNTcxODQ3MjI4.XxgtQA.8Mk-pyjUEetHDCX5i8QQzmPTbOg")
+access_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
